@@ -1,17 +1,30 @@
-//  Завдання 1
+//  Завдання 1-2
 // let textOne = "Hello";
+// textOne = "bye";
 // let textTwo = "owu";
+// textTwo = "uwo";
 // let textThree = "com";
+// textThree = "moc";
 // let textFour = "ua";
+// textFour = "au";
 // let figureOne = 1;
+// figureOne = 2;
 // let figureTwo = 10;
+// figureTwo = 11;
 // let figureThree = -999;
+// figureThree = 999;
 // let figureFour = 123;
+// figureFour = 321;
 // let figureFive = 3.14;
+// figureFive = 14.3;
 // let figureSix = 2.7;
+// figureSix = 7.2;
 // let figureSeven = 16;
-// let bool = true;
-// let bool = false;
+// figureSeven = 61;
+// let textFive = true;
+// textFive = false;
+// let textSix = false;
+// textSix = true;
 // console.log(textOne, textTwo, textThree, textFour);
 // alert(figureOne);
 // alert(figureTwo);
@@ -20,38 +33,11 @@
 // alert(figureFive);
 // alert(figureSix);
 // alert(figureSeven);
-// document.write(bool);
+// document.write(textFive);
 // document.write("<br>");
-//  document.write(bool);
+// document.write(textSix);
 //
 
-//
-// Завдання 2
-// let textOne = "sasha";
-// let textTwo = "home";
-// let textThree = "work";
-// let textFour = "usa";
-// let figureOne = 3;
-// let figureTwo = 4;
-// let figureThree = 999;
-// let figureFour = 623;
-// let figureFive = 7.14;
-// let figureSix = 8.7;
-// let figureSeven = 46;
-// let bool = false;
-// let bool = true;
-// console.log(textOne, textTwo, textThree, textFour);
-// alert(figureOne);
-// alert(figureTwo);
-// alert(figureThree);
-// alert(figureFour);
-// alert(figureFive);
-// alert(figureSix);
-// alert(figureSeven);
-// document.write(bool);
-// document.write("<br>");
-// document.write(bool);
-//
 
 // Завдання 3
 // let name = "Sasha";
