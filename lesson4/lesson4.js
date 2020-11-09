@@ -19,29 +19,43 @@
 
 // Для виведення використати попвередню функцію.
 // - створити функцію яка приймає три числа та виводить та повертає найменьше.
-// function start (lenght, min, max){
-//     let arr = [];
-//     for (let i = 0; i < lenght; i++) {
-//         arr.push(Math.floor(Math.random()*(max-min)+min));
-//     }
-//     return Math.min(...arr);
-// }
+// function start (num1,num2,num3){
+//     if (num1 < num2 && num1 < num3){
+//         return num1;
+//     }else if (num2 < num1 && num2 < num3 ){
+//         return num2;
+//     }else if (num3 < num1  && num3 < num2){
+//         return num3;
+//     }}
 // console.log(start(3,10,100));
 
 // - створити функцію яка приймає три числа та виводить та повертає найбільше.
-// function start (lenght, min, max){
-//     let arr = [];
-//     for (let i = 0; i < lenght; i++) {
-//         arr.push(Math.floor(Math.random()*(max-min)+min));
-//     }
-//     return Math.max(...arr);
-// }
-// console.log(start(3,10,100));
+// function start (num1, num2,num3){
+//    if (num1 > num2 && num1 > num3){
+//        return num1;
+//    }else if (num2 > num1 && num2 > num3 ){
+//        return num2;
+//    }else if (num3 > num1  && num3 > num2){
+//        return num3;
+// }}
+// console.log(start(3,1,2));
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше
 // function start (){
-//     console.log(Math.max(...arguments));
-//     return Math.min(...arguments);
+//     let a = 0;
+//     let b = 0;
+//     for (let i = 0; i < arguments.length; i++) {
+//         if (i === 0){
+//             a = arguments[i];
+//             b = arguments[i];
+//         }
+//     if (a > arguments[i]){
+//         a = arguments[i];
+//     }if (b <arguments[i]){
+//         b = arguments[i];
+//     }}
+//     console.log(b);
+//     return a;
 // }
 // start(3, 4, 78, 123, 100);
 
@@ -220,10 +234,13 @@
 // console.log(split);
 
 // - *** приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
+
 // let array = [21, 43, 54, 1, 73, 2, 10];
 // function start(array, i){
 //     if(i < array.length-1){
+//         let a = array[i];
 //         array[i] = array[i+1];
+//         array[i+1] = a;
 //     }
 //      return array
 // }
@@ -272,18 +289,16 @@
 // Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
 // Всі властивості авто в обному блоці
 //
-// function start(cars){
+// function start(cars,tagId){
 // for (let i = 0; i < cars.length; i++) {
 //     const car = cars[i];
-//     const myId = document.getElementById('wrap')
 //     const div = document.createElement("div");
-//
 //     div.innerText = `Марка: ${car.name} Років: ${car.old} Модель: ${car.model} Колір: ${car.color}
 //      Потужність: ${car.power}`;
-//     myId.appendChild(div)
+//     tagId.appendChild(div);
 //
-// }}
-// start( [ {
+// }}const myId = document.getElementById('wrap')
+// start([ {
 //     name: 'mercedes',
 //     old: 3,
 //     model: 'S-class',
@@ -313,17 +328,18 @@
 //     model: 'solaris',
 //     color: 'pink',
 //     power: 250,
-// }],);
+// }], myId);
 
 
 // - приймає масив автомобілів (можна взяти з попередніх дз ),та
 // індентифікатор елемнту в який потрібно додати список цих автомобілів.
 // Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
 // Для кожної властивості створити всередені блока автомоблія свій блок
-// function start(cars){
+// function start(cars,tagId){
+//
 //     for (let i = 0; i < cars.length; i++) {
 //         const car = cars[i];
-//         const myId = document.getElementById('wrap')
+//
 //         const div = document.createElement("div");
 //         const ul = document.createElement('ul');
 //         const li1 = document.createElement('li');
@@ -338,13 +354,14 @@
 //         li3.innerText = `color ${car.color}`;
 //         li4.innerText = `power ${car.power}`;
 //
-//         myId.appendChild(div);
+//         tagId.appendChild(div);
 //         div.appendChild(ul);
 //         ul.appendChild(li1);
 //         ul.appendChild(li2);
 //         ul.appendChild(li3);
 //         ul.appendChild(li4);
-//     }}
+//     }
+//     }const myId = document.getElementById('wrap')
 // start( [ {
 //     name: 'mercedes',
 //     old: 3,
@@ -375,7 +392,7 @@
 //     model: 'solaris',
 //     color: 'pink',
 //     power: 250,
-// }],);
+// }],myId);
 
 
 // (на основі минулого ДЗ)
