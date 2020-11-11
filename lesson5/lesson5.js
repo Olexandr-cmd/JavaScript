@@ -326,46 +326,46 @@
 // --Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 // -- за допоиоги циклу знайти яка попелюшка повинна бути з принцом
 // ==============================================
-class Human {
-    constructor(name,age,size) {
-        this.name = name;
-        this.age = age;
-        this.size = size;
-    }
-}
-class Cinderella extends Human{
-    constructor(name,age,size) {
-        super(name,age,size);
-
-    }}
-
-let girl1 = new Cinderella('Anna', 21, 34);
-let girl2 = new Cinderella('Vika', 23, 33);
-let girl3 = new Cinderella('Liza', 21, 31);
-let girl4 = new Cinderella('Karina', 21, 32);
-let girl5 = new Cinderella('Olya', 21, 36);
-let girl6 = new Cinderella('Masha', 21, 37);
-let girl7 = new Cinderella('Katya', 21, 35);
-let girl8 = new Cinderella('Alina', 21, 39);
-let girl9 = new Cinderella('Emeli', 21, 34);
-let girl10 = new Cinderella('Natasha', 21, 40);
-
-let girls= [girl1,girl2,girl3,girl4,girl5,girl6,girl7,girl8,girl9,girl10];
-
-class Prince extends Human{
-    constructor(name,age,size) {
-        super(name,age,size);
-    }
-    findCinderella(Cinderellas){
-        for (const girl of girls) {
-            if (man.size === girl.size){
-                console.log(`${man.name} and ${girl.name} happy family`);
-            }
-        }
-    }
-}
-let man = new Prince('Oleg',31,33);
-man.findCinderella(girls);
+// class Human {
+//     constructor(name,age,size) {
+//         this.name = name;
+//         this.age = age;
+//         this.size = size;
+//     }
+// }
+// class Cinderella extends Human{
+//     constructor(name,age,size) {
+//         super(name,age,size);
+//
+//     }}
+//
+// let girl1 = new Cinderella('Anna', 21, 34);
+// let girl2 = new Cinderella('Vika', 23, 33);
+// let girl3 = new Cinderella('Liza', 21, 31);
+// let girl4 = new Cinderella('Karina', 21, 32);
+// let girl5 = new Cinderella('Olya', 21, 36);
+// let girl6 = new Cinderella('Masha', 21, 37);
+// let girl7 = new Cinderella('Katya', 21, 35);
+// let girl8 = new Cinderella('Alina', 21, 39);
+// let girl9 = new Cinderella('Emeli', 21, 34);
+// let girl10 = new Cinderella('Natasha', 21, 40);
+//
+// let girls= [girl1,girl2,girl3,girl4,girl5,girl6,girl7,girl8,girl9,girl10];
+//
+// class Prince extends Human{
+//     constructor(name,age,size) {
+//         super(name,age,size);
+//     }
+//     findCinderella(Cinderellas){
+//         for (const girl of girls) {
+//             if (man.size === girl.size){
+//                 console.log(`${man.name} and ${girl.name} happy family`);
+//             }
+//         }
+//     }
+// }
+// let man = new Prince('Oleg',31,33);
+// man.findCinderella(girls);
 
 
 // ==============================================
